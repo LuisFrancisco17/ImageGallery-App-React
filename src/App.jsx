@@ -21,7 +21,20 @@ function App() {
   return (
     <>
       <h1>Image Gallery</h1>
-      <ImageGallery items={images}/>
+      <div style={{width: "70vw", margin: "auto"}}>
+        <ImageGallery items={images}
+        showPlayButton={false}
+        showFullscreenButton={false}
+        showThumbnails={true}
+        showNav={false}
+        showBullets={true}
+        autoPlay={true}
+        slideInterval={3000}
+        slideDuration={1000}
+        thumbnailPosition="left"
+        />
+
+      </div>
     </>
   )
 }
